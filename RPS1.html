@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" type="text/css" href="RPS1.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap');
+  </style>
+
+  <script src="RPS1.js" defer></script>
+
+
+  <title> Rock, Paper, Scissors</title>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="scoreboard">
+        <img src="images/logo-bonus.svg">
+        <div class="score">
+          <h4>SCORE</h4>
+          <span id="score">0</span>
+        </div>
+    </div>
+
+    <div class="user_choices">
+
+      <div class="imgcontainer">
+        <img src="images/bg-pentagon.svg" alt="bg-pentagon">
+      
+      </div>
+
+      <div class="imgcontainer">
+      <img src="images/icon-paper.svg" alt="icon-paper" class="icon-paper">
+      <svg width="130" height="130" class="svg-paper">
+        <circle cx="50" cy="50" r="48" stroke="green" stroke-width="4" fill="white" class="circle-paper"></circle>
+     </svg>
+     </svg> 
+      </div>
+
+      <div class="imgcontainer">
+      <img src="images/icon-rock.svg" alt="icon-rock" class="icon-rock">
+      <svg width="130" height="130" class="svg-rock">
+        <circle cx="50" cy="50" r="48" stroke="yellow" stroke-width="4" fill="white" class="circle-rock"></circle>
+     </svg>
+      
+      </div>
+
+      <div class="imgcontainer">
+      <img src="images/icon-lizard.svg" alt="icon-lizard" class="icon-lizard">
+      <svg width="130" height="130" class="svg-lizard">
+        <circle cx="50" cy="50" r="48" stroke="blue" stroke-width="4" fill="white" class="circle-lizard"></circle>
+     </svg>
+      </div>
+
+      <div class="imgcontainer">
+      <img src="images/icon-spock.svg" alt="icon-spock" class="icon-spock">
+      <svg width="130" height="130" class="svg-spock">
+        <circle cx="50" cy="50" r="48" stroke="orange" stroke-width="4" fill="white" class="circle-spock"></circle>
+     </svg>
+      </div>
+
+      <div class="imgcontainer">
+      <img src="images/icon-scissors.svg" alt="icon-scissors" class="icon-scissors">
+      <svg width="130" height="130" class="svg-scissors">
+        <circle cx="50" cy="50" r="48" stroke="red" stroke-width="4" fill="white" class="circle-scissors"></circle>
+      </svg> 
+    </div>
+
+    </div>
+
+
+
+    <div class="playArea">
+
+    <div class="userPlayArea">
+      <img src="images/icon-paper.svg" alt="icon-paper" class="icon-paper">
+      <svg width="300" height="300" class="">
+        <circle cx="150" cy="150" r="146" stroke="green" stroke-width="4" fill="white" class=""></circle>
+     </svg>
+     </svg> 
+    </div>
+
+    <div class="playAreaResult">
+     <span id="result"></span>
+     <button id="playAgainButton">Play Again</button>
+    </div>
+
+    <div class="computerPlayArea">
+      <img src="" alt="" class="icon-paper">
+      <svg width="300" height="300" class="">
+        <circle cx="150" cy="150" r="146" stroke="green" stroke-width="4" fill="white" class=""></circle>
+     </svg>
+     
+    </div>
+
+    </div>
+
+
+    <div class="rules">
+        <button>Rules</button>
+    </div>
+  </div>
+
+  <div class="rulesPopup">
+    <div class="modal">
+      <img src="images/image-rules-bonus.svg" alt="image-rules-bonus">
+    </div>
+  </div>
+
+  <button><a href="main.html"> Back To Home Page</a></button>
+  
+
+</body>
+</html>

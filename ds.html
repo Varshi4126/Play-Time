@@ -1,0 +1,591 @@
+<html><head><title>Dots and Boxes</title>
+
+
+    
+    <link rel="stylesheet" href="ds.css">
+   
+</head>
+
+<body>
+
+
+	<br>
+	<br>
+	<div class="player1">
+	Computer : 0
+	</div>
+	<div class="player2">
+	You : 0
+	</div>
+
+	<div id="app">
+				<div class="box" data-id="0" style="z-index=-1; left:520.5px; top:127.5px"></div>
+				<div class="dot" style="z-index=0; left:513px; top:120px" data-box="0"></div>						
+				<div class="line lineh" data-line-1="0" data-line-2="-10" style="z-index=0; left:518px; top:125px" data-active="false"></div>
+				<div class="line linev" data-line-1="0" data-line-2="-1" style="z-index=0; left:518px; top:125px" data-active="false"></div>
+				
+				<div class="box" data-id="1" style="z-index=0; left:570.5px; top:127.5px"></div>
+				<div class="dot" style="z-index=1; left:563px; top:120px" data-box="1"></div>						
+				<div class="line lineh" data-line-1="1" data-line-2="-9" style="z-index=1; left:568px; top:125px" data-active="false"></div>
+				<div class="line linev" data-line-1="1" data-line-2="0" style="z-index=1; left:568px; top:125px" data-active="false"></div>
+				
+				<div class="box" data-id="2" style="z-index=1; left:620.5px; top:127.5px"></div>
+				<div class="dot" style="z-index=2; left:613px; top:120px" data-box="2"></div>						
+				<div class="line lineh" data-line-1="2" data-line-2="-8" style="z-index=2; left:618px; top:125px" data-active="false"></div>
+				<div class="line linev" data-line-1="2" data-line-2="1" style="z-index=2; left:618px; top:125px" data-active="false"></div>
+				
+				<div class="box" data-id="3" style="z-index=2; left:670.5px; top:127.5px"></div>
+				<div class="dot" style="z-index=3; left:663px; top:120px" data-box="3"></div>						
+				<div class="line lineh" data-line-1="3" data-line-2="-7" style="z-index=3; left:668px; top:125px" data-active="false"></div>
+				<div class="line linev" data-line-1="3" data-line-2="2" style="z-index=3; left:668px; top:125px" data-active="false"></div>
+				
+				<div class="box" data-id="4" style="z-index=3; left:720.5px; top:127.5px"></div>
+				<div class="dot" style="z-index=4; left:713px; top:120px" data-box="4"></div>						
+				<div class="line lineh" data-line-1="4" data-line-2="-6" style="z-index=4; left:718px; top:125px" data-active="false"></div>
+				<div class="line linev" data-line-1="4" data-line-2="3" style="z-index=4; left:718px; top:125px" data-active="false"></div>
+				
+				<div class="box" data-id="5" style="z-index=4; left:770.5px; top:127.5px"></div>
+				<div class="dot" style="z-index=5; left:763px; top:120px" data-box="5"></div>						
+				<div class="line lineh" data-line-1="5" data-line-2="-5" style="z-index=5; left:768px; top:125px" data-active="false"></div>
+				<div class="line linev" data-line-1="5" data-line-2="4" style="z-index=5; left:768px; top:125px" data-active="false"></div>
+				
+				<div class="box" data-id="6" style="z-index=5; left:820.5px; top:127.5px"></div>
+				<div class="dot" style="z-index=6; left:813px; top:120px" data-box="6"></div>						
+				<div class="line lineh" data-line-1="6" data-line-2="-4" style="z-index=6; left:818px; top:125px" data-active="false"></div>
+				<div class="line linev" data-line-1="6" data-line-2="5" style="z-index=6; left:818px; top:125px" data-active="false"></div>
+				
+				<div class="box" data-id="7" style="z-index=6; left:870.5px; top:127.5px"></div>
+				<div class="dot" style="z-index=7; left:863px; top:120px" data-box="7"></div>						
+				<div class="line lineh" data-line-1="7" data-line-2="-3" style="z-index=7; left:868px; top:125px" data-active="false"></div>
+				<div class="line linev" data-line-1="7" data-line-2="6" style="z-index=7; left:868px; top:125px" data-active="false"></div>
+				
+				<div class="box" data-id="8" style="z-index=7; left:920.5px; top:127.5px"></div>
+				<div class="dot" style="z-index=8; left:913px; top:120px" data-box="8"></div>						
+				<div class="line lineh" data-line-1="8" data-line-2="-2" style="z-index=8; left:918px; top:125px" data-active="false"></div>
+				<div class="line linev" data-line-1="8" data-line-2="7" style="z-index=8; left:918px; top:125px" data-active="false"></div>
+				
+				<div class="box" data-id="9" style="z-index=8; left:970.5px; top:127.5px"></div>
+				<div class="dot" style="z-index=9; left:963px; top:120px" data-box="9"></div>						
+				<div class="line lineh" data-line-1="9" data-line-2="-1" style="z-index=9; left:968px; top:125px" data-active="false"></div>
+				<div class="line linev" data-line-1="9" data-line-2="8" style="z-index=9; left:968px; top:125px" data-active="false"></div>
+				
+				<div class="box" data-id="10" style="z-index=-1; left:520.5px; top:177.5px"></div>
+				<div class="dot" style="z-index=0; left:513px; top:170px" data-box="10"></div>						
+				<div class="line lineh" data-line-1="10" data-line-2="0" style="z-index=0; left:518px; top:175px" data-active="false"></div>
+				<div class="line linev" data-line-1="10" data-line-2="9" style="z-index=0; left:518px; top:175px" data-active="false"></div>
+				
+				<div class="box" data-id="11" style="z-index=0; left:570.5px; top:177.5px"></div>
+				<div class="dot" style="z-index=1; left:563px; top:170px" data-box="11"></div>						
+				<div class="line lineh" data-line-1="11" data-line-2="1" style="z-index=1; left:568px; top:175px" data-active="false"></div>
+				<div class="line linev" data-line-1="11" data-line-2="10" style="z-index=1; left:568px; top:175px" data-active="false"></div>
+				
+				<div class="box" data-id="12" style="z-index=1; left:620.5px; top:177.5px"></div>
+				<div class="dot" style="z-index=2; left:613px; top:170px" data-box="12"></div>						
+				<div class="line lineh" data-line-1="12" data-line-2="2" style="z-index=2; left:618px; top:175px" data-active="false"></div>
+				<div class="line linev" data-line-1="12" data-line-2="11" style="z-index=2; left:618px; top:175px" data-active="false"></div>
+				
+				<div class="box" data-id="13" style="z-index=2; left:670.5px; top:177.5px"></div>
+				<div class="dot" style="z-index=3; left:663px; top:170px" data-box="13"></div>						
+				<div class="line lineh" data-line-1="13" data-line-2="3" style="z-index=3; left:668px; top:175px" data-active="false"></div>
+				<div class="line linev" data-line-1="13" data-line-2="12" style="z-index=3; left:668px; top:175px" data-active="false"></div>
+				
+				<div class="box" data-id="14" style="z-index=3; left:720.5px; top:177.5px"></div>
+				<div class="dot" style="z-index=4; left:713px; top:170px" data-box="14"></div>						
+				<div class="line lineh" data-line-1="14" data-line-2="4" style="z-index=4; left:718px; top:175px" data-active="false"></div>
+				<div class="line linev" data-line-1="14" data-line-2="13" style="z-index=4; left:718px; top:175px" data-active="false"></div>
+				
+				<div class="box" data-id="15" style="z-index=4; left:770.5px; top:177.5px"></div>
+				<div class="dot" style="z-index=5; left:763px; top:170px" data-box="15"></div>						
+				<div class="line lineh" data-line-1="15" data-line-2="5" style="z-index=5; left:768px; top:175px" data-active="false"></div>
+				<div class="line linev" data-line-1="15" data-line-2="14" style="z-index=5; left:768px; top:175px" data-active="false"></div>
+				
+				<div class="box" data-id="16" style="z-index=5; left:820.5px; top:177.5px"></div>
+				<div class="dot" style="z-index=6; left:813px; top:170px" data-box="16"></div>						
+				<div class="line lineh" data-line-1="16" data-line-2="6" style="z-index=6; left:818px; top:175px" data-active="false"></div>
+				<div class="line linev" data-line-1="16" data-line-2="15" style="z-index=6; left:818px; top:175px" data-active="false"></div>
+				
+				<div class="box" data-id="17" style="z-index=6; left:870.5px; top:177.5px"></div>
+				<div class="dot" style="z-index=7; left:863px; top:170px" data-box="17"></div>						
+				<div class="line lineh" data-line-1="17" data-line-2="7" style="z-index=7; left:868px; top:175px" data-active="false"></div>
+				<div class="line linev" data-line-1="17" data-line-2="16" style="z-index=7; left:868px; top:175px" data-active="false"></div>
+				
+				<div class="box" data-id="18" style="z-index=7; left:920.5px; top:177.5px"></div>
+				<div class="dot" style="z-index=8; left:913px; top:170px" data-box="18"></div>						
+				<div class="line lineh" data-line-1="18" data-line-2="8" style="z-index=8; left:918px; top:175px" data-active="false"></div>
+				<div class="line linev" data-line-1="18" data-line-2="17" style="z-index=8; left:918px; top:175px" data-active="false"></div>
+				
+				<div class="box" data-id="19" style="z-index=8; left:970.5px; top:177.5px"></div>
+				<div class="dot" style="z-index=9; left:963px; top:170px" data-box="19"></div>						
+				<div class="line lineh" data-line-1="19" data-line-2="9" style="z-index=9; left:968px; top:175px" data-active="false"></div>
+				<div class="line linev" data-line-1="19" data-line-2="18" style="z-index=9; left:968px; top:175px" data-active="false"></div>
+				
+				<div class="box" data-id="20" style="z-index=-1; left:520.5px; top:227.5px"></div>
+				<div class="dot" style="z-index=0; left:513px; top:220px" data-box="20"></div>						
+				<div class="line lineh" data-line-1="20" data-line-2="10" style="z-index=0; left:518px; top:225px" data-active="false"></div>
+				<div class="line linev" data-line-1="20" data-line-2="19" style="z-index=0; left:518px; top:225px" data-active="false"></div>
+				
+				<div class="box" data-id="21" style="z-index=0; left:570.5px; top:227.5px"></div>
+				<div class="dot" style="z-index=1; left:563px; top:220px" data-box="21"></div>						
+				<div class="line lineh" data-line-1="21" data-line-2="11" style="z-index=1; left:568px; top:225px" data-active="false"></div>
+				<div class="line linev" data-line-1="21" data-line-2="20" style="z-index=1; left:568px; top:225px" data-active="false"></div>
+				
+				<div class="box" data-id="22" style="z-index=1; left:620.5px; top:227.5px"></div>
+				<div class="dot" style="z-index=2; left:613px; top:220px" data-box="22"></div>						
+				<div class="line lineh" data-line-1="22" data-line-2="12" style="z-index=2; left:618px; top:225px" data-active="false"></div>
+				<div class="line linev" data-line-1="22" data-line-2="21" style="z-index=2; left:618px; top:225px" data-active="false"></div>
+				
+				<div class="box" data-id="23" style="z-index=2; left:670.5px; top:227.5px"></div>
+				<div class="dot" style="z-index=3; left:663px; top:220px" data-box="23"></div>						
+				<div class="line lineh" data-line-1="23" data-line-2="13" style="z-index=3; left:668px; top:225px" data-active="false"></div>
+				<div class="line linev" data-line-1="23" data-line-2="22" style="z-index=3; left:668px; top:225px" data-active="false"></div>
+				
+				<div class="box" data-id="24" style="z-index=3; left:720.5px; top:227.5px"></div>
+				<div class="dot" style="z-index=4; left:713px; top:220px" data-box="24"></div>						
+				<div class="line lineh" data-line-1="24" data-line-2="14" style="z-index=4; left:718px; top:225px" data-active="false"></div>
+				<div class="line linev" data-line-1="24" data-line-2="23" style="z-index=4; left:718px; top:225px" data-active="false"></div>
+				
+				<div class="box" data-id="25" style="z-index=4; left:770.5px; top:227.5px"></div>
+				<div class="dot" style="z-index=5; left:763px; top:220px" data-box="25"></div>						
+				<div class="line lineh" data-line-1="25" data-line-2="15" style="z-index=5; left:768px; top:225px" data-active="false"></div>
+				<div class="line linev" data-line-1="25" data-line-2="24" style="z-index=5; left:768px; top:225px" data-active="false"></div>
+				
+				<div class="box" data-id="26" style="z-index=5; left:820.5px; top:227.5px"></div>
+				<div class="dot" style="z-index=6; left:813px; top:220px" data-box="26"></div>						
+				<div class="line lineh" data-line-1="26" data-line-2="16" style="z-index=6; left:818px; top:225px" data-active="false"></div>
+				<div class="line linev" data-line-1="26" data-line-2="25" style="z-index=6; left:818px; top:225px" data-active="false"></div>
+				
+				<div class="box" data-id="27" style="z-index=6; left:870.5px; top:227.5px"></div>
+				<div class="dot" style="z-index=7; left:863px; top:220px" data-box="27"></div>						
+				<div class="line lineh" data-line-1="27" data-line-2="17" style="z-index=7; left:868px; top:225px" data-active="false"></div>
+				<div class="line linev" data-line-1="27" data-line-2="26" style="z-index=7; left:868px; top:225px" data-active="false"></div>
+				
+				<div class="box" data-id="28" style="z-index=7; left:920.5px; top:227.5px"></div>
+				<div class="dot" style="z-index=8; left:913px; top:220px" data-box="28"></div>						
+				<div class="line lineh" data-line-1="28" data-line-2="18" style="z-index=8; left:918px; top:225px" data-active="false"></div>
+				<div class="line linev" data-line-1="28" data-line-2="27" style="z-index=8; left:918px; top:225px" data-active="false"></div>
+				
+				<div class="box" data-id="29" style="z-index=8; left:970.5px; top:227.5px"></div>
+				<div class="dot" style="z-index=9; left:963px; top:220px" data-box="29"></div>						
+				<div class="line lineh" data-line-1="29" data-line-2="19" style="z-index=9; left:968px; top:225px" data-active="false"></div>
+				<div class="line linev" data-line-1="29" data-line-2="28" style="z-index=9; left:968px; top:225px" data-active="false"></div>
+				
+				<div class="box" data-id="30" style="z-index=-1; left:520.5px; top:277.5px"></div>
+				<div class="dot" style="z-index=0; left:513px; top:270px" data-box="30"></div>						
+				<div class="line lineh" data-line-1="30" data-line-2="20" style="z-index=0; left:518px; top:275px" data-active="false"></div>
+				<div class="line linev" data-line-1="30" data-line-2="29" style="z-index=0; left:518px; top:275px" data-active="false"></div>
+				
+				<div class="box" data-id="31" style="z-index=0; left:570.5px; top:277.5px"></div>
+				<div class="dot" style="z-index=1; left:563px; top:270px" data-box="31"></div>						
+				<div class="line lineh" data-line-1="31" data-line-2="21" style="z-index=1; left:568px; top:275px" data-active="false"></div>
+				<div class="line linev" data-line-1="31" data-line-2="30" style="z-index=1; left:568px; top:275px" data-active="false"></div>
+				
+				<div class="box" data-id="32" style="z-index=1; left:620.5px; top:277.5px"></div>
+				<div class="dot" style="z-index=2; left:613px; top:270px" data-box="32"></div>						
+				<div class="line lineh" data-line-1="32" data-line-2="22" style="z-index=2; left:618px; top:275px" data-active="false"></div>
+				<div class="line linev" data-line-1="32" data-line-2="31" style="z-index=2; left:618px; top:275px" data-active="false"></div>
+				
+				<div class="box" data-id="33" style="z-index=2; left:670.5px; top:277.5px"></div>
+				<div class="dot" style="z-index=3; left:663px; top:270px" data-box="33"></div>						
+				<div class="line lineh" data-line-1="33" data-line-2="23" style="z-index=3; left:668px; top:275px" data-active="false"></div>
+				<div class="line linev" data-line-1="33" data-line-2="32" style="z-index=3; left:668px; top:275px" data-active="false"></div>
+				
+				<div class="box" data-id="34" style="z-index=3; left:720.5px; top:277.5px"></div>
+				<div class="dot" style="z-index=4; left:713px; top:270px" data-box="34"></div>						
+				<div class="line lineh" data-line-1="34" data-line-2="24" style="z-index=4; left:718px; top:275px" data-active="false"></div>
+				<div class="line linev" data-line-1="34" data-line-2="33" style="z-index=4; left:718px; top:275px" data-active="false"></div>
+				
+				<div class="box" data-id="35" style="z-index=4; left:770.5px; top:277.5px"></div>
+				<div class="dot" style="z-index=5; left:763px; top:270px" data-box="35"></div>						
+				<div class="line lineh" data-line-1="35" data-line-2="25" style="z-index=5; left:768px; top:275px" data-active="false"></div>
+				<div class="line linev" data-line-1="35" data-line-2="34" style="z-index=5; left:768px; top:275px" data-active="false"></div>
+				
+				<div class="box" data-id="36" style="z-index=5; left:820.5px; top:277.5px"></div>
+				<div class="dot" style="z-index=6; left:813px; top:270px" data-box="36"></div>						
+				<div class="line lineh" data-line-1="36" data-line-2="26" style="z-index=6; left:818px; top:275px" data-active="false"></div>
+				<div class="line linev" data-line-1="36" data-line-2="35" style="z-index=6; left:818px; top:275px" data-active="false"></div>
+				
+				<div class="box" data-id="37" style="z-index=6; left:870.5px; top:277.5px"></div>
+				<div class="dot" style="z-index=7; left:863px; top:270px" data-box="37"></div>						
+				<div class="line lineh" data-line-1="37" data-line-2="27" style="z-index=7; left:868px; top:275px" data-active="false"></div>
+				<div class="line linev" data-line-1="37" data-line-2="36" style="z-index=7; left:868px; top:275px" data-active="false"></div>
+				
+				<div class="box" data-id="38" style="z-index=7; left:920.5px; top:277.5px"></div>
+				<div class="dot" style="z-index=8; left:913px; top:270px" data-box="38"></div>						
+				<div class="line lineh" data-line-1="38" data-line-2="28" style="z-index=8; left:918px; top:275px" data-active="false"></div>
+				<div class="line linev" data-line-1="38" data-line-2="37" style="z-index=8; left:918px; top:275px" data-active="false"></div>
+				
+				<div class="box" data-id="39" style="z-index=8; left:970.5px; top:277.5px"></div>
+				<div class="dot" style="z-index=9; left:963px; top:270px" data-box="39"></div>						
+				<div class="line lineh" data-line-1="39" data-line-2="29" style="z-index=9; left:968px; top:275px" data-active="false"></div>
+				<div class="line linev" data-line-1="39" data-line-2="38" style="z-index=9; left:968px; top:275px" data-active="false"></div>
+				
+				<div class="box" data-id="40" style="z-index=-1; left:520.5px; top:327.5px"></div>
+				<div class="dot" style="z-index=0; left:513px; top:320px" data-box="40"></div>						
+				<div class="line lineh" data-line-1="40" data-line-2="30" style="z-index=0; left:518px; top:325px" data-active="false"></div>
+				<div class="line linev" data-line-1="40" data-line-2="39" style="z-index=0; left:518px; top:325px" data-active="false"></div>
+				
+				<div class="box" data-id="41" style="z-index=0; left:570.5px; top:327.5px"></div>
+				<div class="dot" style="z-index=1; left:563px; top:320px" data-box="41"></div>						
+				<div class="line lineh" data-line-1="41" data-line-2="31" style="z-index=1; left:568px; top:325px" data-active="false"></div>
+				<div class="line linev" data-line-1="41" data-line-2="40" style="z-index=1; left:568px; top:325px" data-active="false"></div>
+				
+				<div class="box" data-id="42" style="z-index=1; left:620.5px; top:327.5px"></div>
+				<div class="dot" style="z-index=2; left:613px; top:320px" data-box="42"></div>						
+				<div class="line lineh" data-line-1="42" data-line-2="32" style="z-index=2; left:618px; top:325px" data-active="false"></div>
+				<div class="line linev" data-line-1="42" data-line-2="41" style="z-index=2; left:618px; top:325px" data-active="false"></div>
+				
+				<div class="box" data-id="43" style="z-index=2; left:670.5px; top:327.5px"></div>
+				<div class="dot" style="z-index=3; left:663px; top:320px" data-box="43"></div>						
+				<div class="line lineh" data-line-1="43" data-line-2="33" style="z-index=3; left:668px; top:325px" data-active="false"></div>
+				<div class="line linev" data-line-1="43" data-line-2="42" style="z-index=3; left:668px; top:325px" data-active="false"></div>
+				
+				<div class="box" data-id="44" style="z-index=3; left:720.5px; top:327.5px"></div>
+				<div class="dot" style="z-index=4; left:713px; top:320px" data-box="44"></div>						
+				<div class="line lineh" data-line-1="44" data-line-2="34" style="z-index=4; left:718px; top:325px" data-active="false"></div>
+				<div class="line linev" data-line-1="44" data-line-2="43" style="z-index=4; left:718px; top:325px" data-active="false"></div>
+				
+				<div class="box" data-id="45" style="z-index=4; left:770.5px; top:327.5px"></div>
+				<div class="dot" style="z-index=5; left:763px; top:320px" data-box="45"></div>						
+				<div class="line lineh" data-line-1="45" data-line-2="35" style="z-index=5; left:768px; top:325px" data-active="false"></div>
+				<div class="line linev" data-line-1="45" data-line-2="44" style="z-index=5; left:768px; top:325px" data-active="false"></div>
+				
+				<div class="box" data-id="46" style="z-index=5; left:820.5px; top:327.5px"></div>
+				<div class="dot" style="z-index=6; left:813px; top:320px" data-box="46"></div>						
+				<div class="line lineh" data-line-1="46" data-line-2="36" style="z-index=6; left:818px; top:325px" data-active="false"></div>
+				<div class="line linev" data-line-1="46" data-line-2="45" style="z-index=6; left:818px; top:325px" data-active="false"></div>
+				
+				<div class="box" data-id="47" style="z-index=6; left:870.5px; top:327.5px"></div>
+				<div class="dot" style="z-index=7; left:863px; top:320px" data-box="47"></div>						
+				<div class="line lineh" data-line-1="47" data-line-2="37" style="z-index=7; left:868px; top:325px" data-active="false"></div>
+				<div class="line linev" data-line-1="47" data-line-2="46" style="z-index=7; left:868px; top:325px" data-active="false"></div>
+				
+				<div class="box" data-id="48" style="z-index=7; left:920.5px; top:327.5px"></div>
+				<div class="dot" style="z-index=8; left:913px; top:320px" data-box="48"></div>						
+				<div class="line lineh" data-line-1="48" data-line-2="38" style="z-index=8; left:918px; top:325px" data-active="false"></div>
+				<div class="line linev" data-line-1="48" data-line-2="47" style="z-index=8; left:918px; top:325px" data-active="false"></div>
+				
+				<div class="box" data-id="49" style="z-index=8; left:970.5px; top:327.5px"></div>
+				<div class="dot" style="z-index=9; left:963px; top:320px" data-box="49"></div>						
+				<div class="line lineh" data-line-1="49" data-line-2="39" style="z-index=9; left:968px; top:325px" data-active="false"></div>
+				<div class="line linev" data-line-1="49" data-line-2="48" style="z-index=9; left:968px; top:325px" data-active="false"></div>
+				
+				<div class="box" data-id="50" style="z-index=-1; left:520.5px; top:377.5px"></div>
+				<div class="dot" style="z-index=0; left:513px; top:370px" data-box="50"></div>						
+				<div class="line lineh" data-line-1="50" data-line-2="40" style="z-index=0; left:518px; top:375px" data-active="false"></div>
+				<div class="line linev" data-line-1="50" data-line-2="49" style="z-index=0; left:518px; top:375px" data-active="false"></div>
+				
+				<div class="box" data-id="51" style="z-index=0; left:570.5px; top:377.5px"></div>
+				<div class="dot" style="z-index=1; left:563px; top:370px" data-box="51"></div>						
+				<div class="line lineh" data-line-1="51" data-line-2="41" style="z-index=1; left:568px; top:375px" data-active="false"></div>
+				<div class="line linev" data-line-1="51" data-line-2="50" style="z-index=1; left:568px; top:375px" data-active="false"></div>
+				
+				<div class="box" data-id="52" style="z-index=1; left:620.5px; top:377.5px"></div>
+				<div class="dot" style="z-index=2; left:613px; top:370px" data-box="52"></div>						
+				<div class="line lineh" data-line-1="52" data-line-2="42" style="z-index=2; left:618px; top:375px" data-active="false"></div>
+				<div class="line linev" data-line-1="52" data-line-2="51" style="z-index=2; left:618px; top:375px" data-active="false"></div>
+				
+				<div class="box" data-id="53" style="z-index=2; left:670.5px; top:377.5px"></div>
+				<div class="dot" style="z-index=3; left:663px; top:370px" data-box="53"></div>						
+				<div class="line lineh" data-line-1="53" data-line-2="43" style="z-index=3; left:668px; top:375px" data-active="false"></div>
+				<div class="line linev" data-line-1="53" data-line-2="52" style="z-index=3; left:668px; top:375px" data-active="false"></div>
+				
+				<div class="box" data-id="54" style="z-index=3; left:720.5px; top:377.5px"></div>
+				<div class="dot" style="z-index=4; left:713px; top:370px" data-box="54"></div>						
+				<div class="line lineh" data-line-1="54" data-line-2="44" style="z-index=4; left:718px; top:375px" data-active="false"></div>
+				<div class="line linev" data-line-1="54" data-line-2="53" style="z-index=4; left:718px; top:375px" data-active="false"></div>
+				
+				<div class="box" data-id="55" style="z-index=4; left:770.5px; top:377.5px"></div>
+				<div class="dot" style="z-index=5; left:763px; top:370px" data-box="55"></div>						
+				<div class="line lineh" data-line-1="55" data-line-2="45" style="z-index=5; left:768px; top:375px" data-active="false"></div>
+				<div class="line linev" data-line-1="55" data-line-2="54" style="z-index=5; left:768px; top:375px" data-active="false"></div>
+				
+				<div class="box" data-id="56" style="z-index=5; left:820.5px; top:377.5px"></div>
+				<div class="dot" style="z-index=6; left:813px; top:370px" data-box="56"></div>						
+				<div class="line lineh" data-line-1="56" data-line-2="46" style="z-index=6; left:818px; top:375px" data-active="false"></div>
+				<div class="line linev" data-line-1="56" data-line-2="55" style="z-index=6; left:818px; top:375px" data-active="false"></div>
+				
+				<div class="box" data-id="57" style="z-index=6; left:870.5px; top:377.5px"></div>
+				<div class="dot" style="z-index=7; left:863px; top:370px" data-box="57"></div>						
+				<div class="line lineh" data-line-1="57" data-line-2="47" style="z-index=7; left:868px; top:375px" data-active="false"></div>
+				<div class="line linev" data-line-1="57" data-line-2="56" style="z-index=7; left:868px; top:375px" data-active="false"></div>
+				
+				<div class="box" data-id="58" style="z-index=7; left:920.5px; top:377.5px"></div>
+				<div class="dot" style="z-index=8; left:913px; top:370px" data-box="58"></div>						
+				<div class="line lineh" data-line-1="58" data-line-2="48" style="z-index=8; left:918px; top:375px" data-active="false"></div>
+				<div class="line linev" data-line-1="58" data-line-2="57" style="z-index=8; left:918px; top:375px" data-active="false"></div>
+				
+				<div class="box" data-id="59" style="z-index=8; left:970.5px; top:377.5px"></div>
+				<div class="dot" style="z-index=9; left:963px; top:370px" data-box="59"></div>						
+				<div class="line lineh" data-line-1="59" data-line-2="49" style="z-index=9; left:968px; top:375px" data-active="false"></div>
+				<div class="line linev" data-line-1="59" data-line-2="58" style="z-index=9; left:968px; top:375px" data-active="false"></div>
+				
+				<div class="box" data-id="60" style="z-index=-1; left:520.5px; top:427.5px"></div>
+				<div class="dot" style="z-index=0; left:513px; top:420px" data-box="60"></div>						
+				<div class="line lineh" data-line-1="60" data-line-2="50" style="z-index=0; left:518px; top:425px" data-active="false"></div>
+				<div class="line linev" data-line-1="60" data-line-2="59" style="z-index=0; left:518px; top:425px" data-active="false"></div>
+				
+				<div class="box" data-id="61" style="z-index=0; left:570.5px; top:427.5px"></div>
+				<div class="dot" style="z-index=1; left:563px; top:420px" data-box="61"></div>						
+				<div class="line lineh" data-line-1="61" data-line-2="51" style="z-index=1; left:568px; top:425px" data-active="false"></div>
+				<div class="line linev" data-line-1="61" data-line-2="60" style="z-index=1; left:568px; top:425px" data-active="false"></div>
+				
+				<div class="box" data-id="62" style="z-index=1; left:620.5px; top:427.5px"></div>
+				<div class="dot" style="z-index=2; left:613px; top:420px" data-box="62"></div>						
+				<div class="line lineh" data-line-1="62" data-line-2="52" style="z-index=2; left:618px; top:425px" data-active="false"></div>
+				<div class="line linev" data-line-1="62" data-line-2="61" style="z-index=2; left:618px; top:425px" data-active="false"></div>
+				
+				<div class="box" data-id="63" style="z-index=2; left:670.5px; top:427.5px"></div>
+				<div class="dot" style="z-index=3; left:663px; top:420px" data-box="63"></div>						
+				<div class="line lineh" data-line-1="63" data-line-2="53" style="z-index=3; left:668px; top:425px" data-active="false"></div>
+				<div class="line linev" data-line-1="63" data-line-2="62" style="z-index=3; left:668px; top:425px" data-active="false"></div>
+				
+				<div class="box" data-id="64" style="z-index=3; left:720.5px; top:427.5px"></div>
+				<div class="dot" style="z-index=4; left:713px; top:420px" data-box="64"></div>						
+				<div class="line lineh" data-line-1="64" data-line-2="54" style="z-index=4; left:718px; top:425px" data-active="false"></div>
+				<div class="line linev" data-line-1="64" data-line-2="63" style="z-index=4; left:718px; top:425px" data-active="false"></div>
+				
+				<div class="box" data-id="65" style="z-index=4; left:770.5px; top:427.5px"></div>
+				<div class="dot" style="z-index=5; left:763px; top:420px" data-box="65"></div>						
+				<div class="line lineh" data-line-1="65" data-line-2="55" style="z-index=5; left:768px; top:425px" data-active="false"></div>
+				<div class="line linev" data-line-1="65" data-line-2="64" style="z-index=5; left:768px; top:425px" data-active="false"></div>
+				
+				<div class="box" data-id="66" style="z-index=5; left:820.5px; top:427.5px"></div>
+				<div class="dot" style="z-index=6; left:813px; top:420px" data-box="66"></div>						
+				<div class="line lineh" data-line-1="66" data-line-2="56" style="z-index=6; left:818px; top:425px" data-active="false"></div>
+				<div class="line linev" data-line-1="66" data-line-2="65" style="z-index=6; left:818px; top:425px" data-active="false"></div>
+				
+				<div class="box" data-id="67" style="z-index=6; left:870.5px; top:427.5px"></div>
+				<div class="dot" style="z-index=7; left:863px; top:420px" data-box="67"></div>						
+				<div class="line lineh" data-line-1="67" data-line-2="57" style="z-index=7; left:868px; top:425px" data-active="false"></div>
+				<div class="line linev" data-line-1="67" data-line-2="66" style="z-index=7; left:868px; top:425px" data-active="false"></div>
+				
+				<div class="box" data-id="68" style="z-index=7; left:920.5px; top:427.5px"></div>
+				<div class="dot" style="z-index=8; left:913px; top:420px" data-box="68"></div>						
+				<div class="line lineh" data-line-1="68" data-line-2="58" style="z-index=8; left:918px; top:425px" data-active="false"></div>
+				<div class="line linev" data-line-1="68" data-line-2="67" style="z-index=8; left:918px; top:425px" data-active="false"></div>
+				
+				<div class="box" data-id="69" style="z-index=8; left:970.5px; top:427.5px"></div>
+				<div class="dot" style="z-index=9; left:963px; top:420px" data-box="69"></div>						
+				<div class="line lineh" data-line-1="69" data-line-2="59" style="z-index=9; left:968px; top:425px" data-active="false"></div>
+				<div class="line linev" data-line-1="69" data-line-2="68" style="z-index=9; left:968px; top:425px" data-active="false"></div>
+				
+				<div class="box" data-id="70" style="z-index=-1; left:520.5px; top:477.5px"></div>
+				<div class="dot" style="z-index=0; left:513px; top:470px" data-box="70"></div>						
+				<div class="line lineh" data-line-1="70" data-line-2="60" style="z-index=0; left:518px; top:475px" data-active="false"></div>
+				<div class="line linev" data-line-1="70" data-line-2="69" style="z-index=0; left:518px; top:475px" data-active="false"></div>
+				
+				<div class="box" data-id="71" style="z-index=0; left:570.5px; top:477.5px"></div>
+				<div class="dot" style="z-index=1; left:563px; top:470px" data-box="71"></div>						
+				<div class="line lineh" data-line-1="71" data-line-2="61" style="z-index=1; left:568px; top:475px" data-active="false"></div>
+				<div class="line linev" data-line-1="71" data-line-2="70" style="z-index=1; left:568px; top:475px" data-active="false"></div>
+				
+				<div class="box" data-id="72" style="z-index=1; left:620.5px; top:477.5px"></div>
+				<div class="dot" style="z-index=2; left:613px; top:470px" data-box="72"></div>						
+				<div class="line lineh" data-line-1="72" data-line-2="62" style="z-index=2; left:618px; top:475px" data-active="false"></div>
+				<div class="line linev" data-line-1="72" data-line-2="71" style="z-index=2; left:618px; top:475px" data-active="false"></div>
+				
+				<div class="box" data-id="73" style="z-index=2; left:670.5px; top:477.5px"></div>
+				<div class="dot" style="z-index=3; left:663px; top:470px" data-box="73"></div>						
+				<div class="line lineh" data-line-1="73" data-line-2="63" style="z-index=3; left:668px; top:475px" data-active="false"></div>
+				<div class="line linev" data-line-1="73" data-line-2="72" style="z-index=3; left:668px; top:475px" data-active="false"></div>
+				
+				<div class="box" data-id="74" style="z-index=3; left:720.5px; top:477.5px"></div>
+				<div class="dot" style="z-index=4; left:713px; top:470px" data-box="74"></div>						
+				<div class="line lineh" data-line-1="74" data-line-2="64" style="z-index=4; left:718px; top:475px" data-active="false"></div>
+				<div class="line linev" data-line-1="74" data-line-2="73" style="z-index=4; left:718px; top:475px" data-active="false"></div>
+				
+				<div class="box" data-id="75" style="z-index=4; left:770.5px; top:477.5px"></div>
+				<div class="dot" style="z-index=5; left:763px; top:470px" data-box="75"></div>						
+				<div class="line lineh" data-line-1="75" data-line-2="65" style="z-index=5; left:768px; top:475px" data-active="false"></div>
+				<div class="line linev" data-line-1="75" data-line-2="74" style="z-index=5; left:768px; top:475px" data-active="false"></div>
+				
+				<div class="box" data-id="76" style="z-index=5; left:820.5px; top:477.5px"></div>
+				<div class="dot" style="z-index=6; left:813px; top:470px" data-box="76"></div>						
+				<div class="line lineh" data-line-1="76" data-line-2="66" style="z-index=6; left:818px; top:475px" data-active="false"></div>
+				<div class="line linev" data-line-1="76" data-line-2="75" style="z-index=6; left:818px; top:475px" data-active="false"></div>
+				
+				<div class="box" data-id="77" style="z-index=6; left:870.5px; top:477.5px"></div>
+				<div class="dot" style="z-index=7; left:863px; top:470px" data-box="77"></div>						
+				<div class="line lineh" data-line-1="77" data-line-2="67" style="z-index=7; left:868px; top:475px" data-active="false"></div>
+				<div class="line linev" data-line-1="77" data-line-2="76" style="z-index=7; left:868px; top:475px" data-active="false"></div>
+				
+				<div class="box" data-id="78" style="z-index=7; left:920.5px; top:477.5px"></div>
+				<div class="dot" style="z-index=8; left:913px; top:470px" data-box="78"></div>						
+				<div class="line lineh" data-line-1="78" data-line-2="68" style="z-index=8; left:918px; top:475px" data-active="false"></div>
+				<div class="line linev" data-line-1="78" data-line-2="77" style="z-index=8; left:918px; top:475px" data-active="false"></div>
+				
+				<div class="box" data-id="79" style="z-index=8; left:970.5px; top:477.5px"></div>
+				<div class="dot" style="z-index=9; left:963px; top:470px" data-box="79"></div>						
+				<div class="line lineh" data-line-1="79" data-line-2="69" style="z-index=9; left:968px; top:475px" data-active="false"></div>
+				<div class="line linev" data-line-1="79" data-line-2="78" style="z-index=9; left:968px; top:475px" data-active="false"></div>
+				
+				<div class="box" data-id="80" style="z-index=-1; left:520.5px; top:527.5px"></div>
+				<div class="dot" style="z-index=0; left:513px; top:520px" data-box="80"></div>						
+				<div class="line lineh" data-line-1="80" data-line-2="70" style="z-index=0; left:518px; top:525px" data-active="false"></div>
+				<div class="line linev" data-line-1="80" data-line-2="79" style="z-index=0; left:518px; top:525px" data-active="false"></div>
+				
+				<div class="box" data-id="81" style="z-index=0; left:570.5px; top:527.5px"></div>
+				<div class="dot" style="z-index=1; left:563px; top:520px" data-box="81"></div>						
+				<div class="line lineh" data-line-1="81" data-line-2="71" style="z-index=1; left:568px; top:525px" data-active="false"></div>
+				<div class="line linev" data-line-1="81" data-line-2="80" style="z-index=1; left:568px; top:525px" data-active="false"></div>
+				
+				<div class="box" data-id="82" style="z-index=1; left:620.5px; top:527.5px"></div>
+				<div class="dot" style="z-index=2; left:613px; top:520px" data-box="82"></div>						
+				<div class="line lineh" data-line-1="82" data-line-2="72" style="z-index=2; left:618px; top:525px" data-active="false"></div>
+				<div class="line linev" data-line-1="82" data-line-2="81" style="z-index=2; left:618px; top:525px" data-active="false"></div>
+				
+				<div class="box" data-id="83" style="z-index=2; left:670.5px; top:527.5px"></div>
+				<div class="dot" style="z-index=3; left:663px; top:520px" data-box="83"></div>						
+				<div class="line lineh" data-line-1="83" data-line-2="73" style="z-index=3; left:668px; top:525px" data-active="false"></div>
+				<div class="line linev" data-line-1="83" data-line-2="82" style="z-index=3; left:668px; top:525px" data-active="false"></div>
+				
+				<div class="box" data-id="84" style="z-index=3; left:720.5px; top:527.5px"></div>
+				<div class="dot" style="z-index=4; left:713px; top:520px" data-box="84"></div>						
+				<div class="line lineh" data-line-1="84" data-line-2="74" style="z-index=4; left:718px; top:525px" data-active="false"></div>
+				<div class="line linev" data-line-1="84" data-line-2="83" style="z-index=4; left:718px; top:525px" data-active="false"></div>
+				
+				<div class="box" data-id="85" style="z-index=4; left:770.5px; top:527.5px"></div>
+				<div class="dot" style="z-index=5; left:763px; top:520px" data-box="85"></div>						
+				<div class="line lineh" data-line-1="85" data-line-2="75" style="z-index=5; left:768px; top:525px" data-active="false"></div>
+				<div class="line linev" data-line-1="85" data-line-2="84" style="z-index=5; left:768px; top:525px" data-active="false"></div>
+				
+				<div class="box" data-id="86" style="z-index=5; left:820.5px; top:527.5px"></div>
+				<div class="dot" style="z-index=6; left:813px; top:520px" data-box="86"></div>						
+				<div class="line lineh" data-line-1="86" data-line-2="76" style="z-index=6; left:818px; top:525px" data-active="false"></div>
+				<div class="line linev" data-line-1="86" data-line-2="85" style="z-index=6; left:818px; top:525px" data-active="false"></div>
+				
+				<div class="box" data-id="87" style="z-index=6; left:870.5px; top:527.5px"></div>
+				<div class="dot" style="z-index=7; left:863px; top:520px" data-box="87"></div>						
+				<div class="line lineh" data-line-1="87" data-line-2="77" style="z-index=7; left:868px; top:525px" data-active="false"></div>
+				<div class="line linev" data-line-1="87" data-line-2="86" style="z-index=7; left:868px; top:525px" data-active="false"></div>
+				
+				<div class="box" data-id="88" style="z-index=7; left:920.5px; top:527.5px"></div>
+				<div class="dot" style="z-index=8; left:913px; top:520px" data-box="88"></div>						
+				<div class="line lineh" data-line-1="88" data-line-2="78" style="z-index=8; left:918px; top:525px" data-active="false"></div>
+				<div class="line linev" data-line-1="88" data-line-2="87" style="z-index=8; left:918px; top:525px" data-active="false"></div>
+				
+				<div class="box" data-id="89" style="z-index=8; left:970.5px; top:527.5px"></div>
+				<div class="dot" style="z-index=9; left:963px; top:520px" data-box="89"></div>						
+				<div class="line lineh" data-line-1="89" data-line-2="79" style="z-index=9; left:968px; top:525px" data-active="false"></div>
+				<div class="line linev" data-line-1="89" data-line-2="88" style="z-index=9; left:968px; top:525px" data-active="false"></div>
+				
+				<div class="box" data-id="90" style="z-index=-1; left:520.5px; top:577.5px"></div>
+				<div class="dot" style="z-index=0; left:513px; top:570px" data-box="90"></div>						
+				<div class="line lineh" data-line-1="90" data-line-2="80" style="z-index=0; left:518px; top:575px" data-active="false"></div>
+				<div class="line linev" data-line-1="90" data-line-2="89" style="z-index=0; left:518px; top:575px" data-active="false"></div>
+				
+				<div class="box" data-id="91" style="z-index=0; left:570.5px; top:577.5px"></div>
+				<div class="dot" style="z-index=1; left:563px; top:570px" data-box="91"></div>						
+				<div class="line lineh" data-line-1="91" data-line-2="81" style="z-index=1; left:568px; top:575px" data-active="false"></div>
+				<div class="line linev" data-line-1="91" data-line-2="90" style="z-index=1; left:568px; top:575px" data-active="false"></div>
+				
+				<div class="box" data-id="92" style="z-index=1; left:620.5px; top:577.5px"></div>
+				<div class="dot" style="z-index=2; left:613px; top:570px" data-box="92"></div>						
+				<div class="line lineh" data-line-1="92" data-line-2="82" style="z-index=2; left:618px; top:575px" data-active="false"></div>
+				<div class="line linev" data-line-1="92" data-line-2="91" style="z-index=2; left:618px; top:575px" data-active="false"></div>
+				
+				<div class="box" data-id="93" style="z-index=2; left:670.5px; top:577.5px"></div>
+				<div class="dot" style="z-index=3; left:663px; top:570px" data-box="93"></div>						
+				<div class="line lineh" data-line-1="93" data-line-2="83" style="z-index=3; left:668px; top:575px" data-active="false"></div>
+				<div class="line linev" data-line-1="93" data-line-2="92" style="z-index=3; left:668px; top:575px" data-active="false"></div>
+				
+				<div class="box" data-id="94" style="z-index=3; left:720.5px; top:577.5px"></div>
+				<div class="dot" style="z-index=4; left:713px; top:570px" data-box="94"></div>						
+				<div class="line lineh" data-line-1="94" data-line-2="84" style="z-index=4; left:718px; top:575px" data-active="false"></div>
+				<div class="line linev" data-line-1="94" data-line-2="93" style="z-index=4; left:718px; top:575px" data-active="false"></div>
+				
+				<div class="box" data-id="95" style="z-index=4; left:770.5px; top:577.5px"></div>
+				<div class="dot" style="z-index=5; left:763px; top:570px" data-box="95"></div>						
+				<div class="line lineh" data-line-1="95" data-line-2="85" style="z-index=5; left:768px; top:575px" data-active="false"></div>
+				<div class="line linev" data-line-1="95" data-line-2="94" style="z-index=5; left:768px; top:575px" data-active="false"></div>
+				
+				<div class="box" data-id="96" style="z-index=5; left:820.5px; top:577.5px"></div>
+				<div class="dot" style="z-index=6; left:813px; top:570px" data-box="96"></div>						
+				<div class="line lineh" data-line-1="96" data-line-2="86" style="z-index=6; left:818px; top:575px" data-active="false"></div>
+				<div class="line linev" data-line-1="96" data-line-2="95" style="z-index=6; left:818px; top:575px" data-active="false"></div>
+				
+				<div class="box" data-id="97" style="z-index=6; left:870.5px; top:577.5px"></div>
+				<div class="dot" style="z-index=7; left:863px; top:570px" data-box="97"></div>						
+				<div class="line lineh" data-line-1="97" data-line-2="87" style="z-index=7; left:868px; top:575px" data-active="false"></div>
+				<div class="line linev" data-line-1="97" data-line-2="96" style="z-index=7; left:868px; top:575px" data-active="false"></div>
+				
+				<div class="box" data-id="98" style="z-index=7; left:920.5px; top:577.5px"></div>
+				<div class="dot" style="z-index=8; left:913px; top:570px" data-box="98"></div>						
+				<div class="line lineh" data-line-1="98" data-line-2="88" style="z-index=8; left:918px; top:575px" data-active="false"></div>
+				<div class="line linev" data-line-1="98" data-line-2="97" style="z-index=8; left:918px; top:575px" data-active="false"></div>
+				
+				<div class="box" data-id="99" style="z-index=8; left:970.5px; top:577.5px"></div>
+				<div class="dot" style="z-index=9; left:963px; top:570px" data-box="99"></div>						
+				<div class="line lineh" data-line-1="99" data-line-2="89" style="z-index=9; left:968px; top:575px" data-active="false"></div>
+				<div class="line linev" data-line-1="99" data-line-2="98" style="z-index=9; left:968px; top:575px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=0; left:1013px; top:120px" data-box="100"></div>
+				<div class="line linev" data-line-1="9" data-line-2="-1" style="z-index=0; left:1018px; top:125px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=1; left:1013px; top:170px" data-box="100"></div>
+				<div class="line linev" data-line-1="19" data-line-2="-1" style="z-index=1; left:1018px; top:175px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=2; left:1013px; top:220px" data-box="100"></div>
+				<div class="line linev" data-line-1="29" data-line-2="-1" style="z-index=2; left:1018px; top:225px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=3; left:1013px; top:270px" data-box="100"></div>
+				<div class="line linev" data-line-1="39" data-line-2="-1" style="z-index=3; left:1018px; top:275px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=4; left:1013px; top:320px" data-box="100"></div>
+				<div class="line linev" data-line-1="49" data-line-2="-1" style="z-index=4; left:1018px; top:325px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=5; left:1013px; top:370px" data-box="100"></div>
+				<div class="line linev" data-line-1="59" data-line-2="-1" style="z-index=5; left:1018px; top:375px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=6; left:1013px; top:420px" data-box="100"></div>
+				<div class="line linev" data-line-1="69" data-line-2="-1" style="z-index=6; left:1018px; top:425px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=7; left:1013px; top:470px" data-box="100"></div>
+				<div class="line linev" data-line-1="79" data-line-2="-1" style="z-index=7; left:1018px; top:475px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=8; left:1013px; top:520px" data-box="100"></div>
+				<div class="line linev" data-line-1="89" data-line-2="-1" style="z-index=8; left:1018px; top:525px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=9; left:1013px; top:570px" data-box="100"></div>
+				<div class="line linev" data-line-1="99" data-line-2="-1" style="z-index=9; left:1018px; top:575px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=0; left:513px; top:620px" data-box="100"></div>
+				<div class="line lineh" data-line-1="90" data-line-2="-1" style="z-index=0; left:518px; top:625px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=1; left:563px; top:620px" data-box="100"></div>
+				<div class="line lineh" data-line-1="91" data-line-2="-1" style="z-index=1; left:568px; top:625px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=2; left:613px; top:620px" data-box="100"></div>
+				<div class="line lineh" data-line-1="92" data-line-2="-1" style="z-index=2; left:618px; top:625px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=3; left:663px; top:620px" data-box="100"></div>
+				<div class="line lineh" data-line-1="93" data-line-2="-1" style="z-index=3; left:668px; top:625px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=4; left:713px; top:620px" data-box="100"></div>
+				<div class="line lineh" data-line-1="94" data-line-2="-1" style="z-index=4; left:718px; top:625px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=5; left:763px; top:620px" data-box="100"></div>
+				<div class="line lineh" data-line-1="95" data-line-2="-1" style="z-index=5; left:768px; top:625px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=6; left:813px; top:620px" data-box="100"></div>
+				<div class="line lineh" data-line-1="96" data-line-2="-1" style="z-index=6; left:818px; top:625px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=7; left:863px; top:620px" data-box="100"></div>
+				<div class="line lineh" data-line-1="97" data-line-2="-1" style="z-index=7; left:868px; top:625px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=8; left:913px; top:620px" data-box="100"></div>
+				<div class="line lineh" data-line-1="98" data-line-2="-1" style="z-index=8; left:918px; top:625px" data-active="false"></div>
+								
+				<div class="dot" style="z-index=9; left:963px; top:620px" data-box="100"></div>
+				<div class="line lineh" data-line-1="99" data-line-2="-1" style="z-index=9; left:968px; top:625px" data-active="false"></div>
+				<div class="dot" style="z-index=10; left:1013px; top:620px" data-active="false"></div></div>
+
+
+
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<script type="text/javascript" src="ds.js"></script>
+
+<button><a href="main.html"> Back To Home Page</a></button>
+
+</body></html>

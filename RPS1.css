@@ -1,0 +1,319 @@
+:root{
+ --main-bg-color: hsl(214, 47%, 23%) ;
+ --icon-theme :hsl(229, 25%, 31%);
+--font-primary:'Barlow Semi Condensed', sans-serif;
+
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--main-bg-color);
+}
+
+.container{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.scoreboard{
+
+  width: 70vw;
+  height: 150px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  margin-top: 2em;
+  
+}
+
+.score{
+  width:20vw;
+  height:100px;
+  background-color: #fff; 
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  border-radius:10px; 
+}
+
+.score h4{
+  color:hsl(229, 64%, 46%);
+  font-size: 1.4em;
+  font-family: var(--font-primary);
+}
+.score span{
+  color:var(--icon-theme);
+  font-size: 3em;
+  display:inline-block;
+  font-family: var(--font-primary);
+
+}
+
+.user_choices{
+  position:relative;
+  padding-bottom: 2em;
+  margin-top: 7em;
+  display:block;
+}
+.user_choices img{
+  z-index: 2;
+}
+
+.user_choices .icon-paper{
+  
+  position: absolute;
+  top: 81px;
+  left: 288px;
+  pointer-events: none;
+    
+}
+.user_choices .svg-paper{
+  position:absolute;
+  top: 62px;
+  left: 267px;
+  
+}
+
+.user_choices .icon-rock{
+  
+  position: absolute;
+  top: 271px;
+  left: 231px;
+  pointer-events: none;
+
+}
+
+.user_choices .svg-rock{
+  position: absolute;
+  top: 245px;
+  left: 205px;
+ 
+}
+
+.user_choices .icon-lizard{
+  
+  position: absolute;
+  top: 268px;
+  left: 35px;
+  pointer-events: none;
+}
+
+.user_choices .svg-lizard{
+  position: absolute;
+  top: 248px;
+  left: 19px;
+  
+}
+.user_choices .icon-spock{
+  
+  position: absolute;
+  top: 85px;
+  left: -6px;
+  pointer-events: none;
+}
+
+.user_choices .svg-spock{
+  position: absolute;
+  top: 69px;
+  left: -32px;
+}
+.user_choices .icon-scissors{
+  
+  position: absolute;
+  top: -22px;
+  left: 142px;
+  pointer-events: none;
+
+}
+.user_choices .svg-scissors{
+  position: absolute;
+  top: -40px;
+  left: 125px;
+}
+
+.playArea{
+ 
+  display:none;
+  flex-direction:row;
+  align-items:center;
+  margin: 6em 0;
+  width: 80vw;
+
+
+}
+
+.userPlayArea{
+  position:relative;
+}
+
+.playArea .icon-paper{
+  position: absolute;
+  top: 67px;
+  left: 68px;
+  width: 134px;
+}
+.playArea .icon-rock{
+  position: absolute;
+  top: 67px;
+  left: 68px;
+  width: 134px;
+}
+
+.playArea .icon-scissor{
+  position: absolute;
+  top: 67px;
+  left: 68px;
+  width: 134px;
+}
+.playArea .icon-spock{
+  position: absolute;
+  top: 67px;
+  left: 68px;
+  width: 134px;
+}
+.playArea .icon-lizard{
+  position: absolute;
+  top: 67px;
+  left: 68px;
+  width: 134px;
+}
+
+.computerPlayArea{
+  position:relative;
+}
+
+
+.computerPlayArea .icon-paper{
+  position: absolute;
+  top: 67px;
+  left: px;
+  width: 134px;
+  pointer-events: none;
+}
+.computerPlayArea .icon-rock{
+  position: absolute;
+  top: 67px;
+  left: 68px;
+  width: 134px;
+  pointer-events: none;
+}
+
+.computerPlayArea .icon-scissor{
+  position: absolute;
+  top: 67px;
+  left: 68px;
+  width: 134px;
+  pointer-events: none;
+}
+.computerPlayArea .icon-spock{
+  position: absolute;
+  top: 67px;
+  left: 68px;
+  width: 134px;
+  pointer-events: none;
+}
+.computerPlayArea .icon-lizard{
+  position: absolute;
+  top: 67px;
+  left: 68px;
+  width: 134px;
+  pointer-events: none;
+}
+
+.playArea > div{
+  width:33%;
+}
+
+
+.playAreaResult{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+  height:9em;
+  visibility:hidden;
+}
+
+#result{
+  color:hsl(229, 64%, 46%);
+  font-size: 2.4em;
+  font-family: var(--font-primary);
+}
+
+#playAgainButton{
+  width:80%;
+  text-align:center;
+  height:50%;
+  background-color: orange;
+  color:#fff;
+  font-size: 2em;
+  font-family: var(--font-primary);
+}
+
+
+.rules{
+  position: fixed;
+  bottom: 45px;
+  right: 26px;
+  width: 7em;
+  height: 3em;
+}
+
+.rules button{
+  width: inherit;
+  height: inherit;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  font-size:x-large;
+}
+
+.rulesPopup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:100vw;
+  height:100vh;
+  background-color: rgba(0,0,0,0.4); 
+  z-index:2;
+  display:none;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rulesPopup > div{
+
+  width:50vw;
+  height:50vh;
+  border:1px solid #fff; 
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  border-radius:10px;
+  background-color: #fff;
+  
+}
+
+
+
+
+
+
+
+
